@@ -1,0 +1,442 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+i, em {
+  font-style: normal; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+
+.header {
+  height: 66px;
+  margin: 0 0 20px;
+  border-bottom: 2px solid #222; }
+
+.container {
+  width: 990px;
+  margin: 0 auto;
+  height: 100%; }
+  .container .logo {
+    float: left;
+    line-height: 66px;
+    font-size: 0; }
+    .container .logo img {
+      vertical-align: middle; }
+  .container .tool {
+    float: right;
+    line-height: 66px;
+    font-size: 0; }
+    .container .tool li {
+      float: left;
+      font-size: 12px;
+      vertical-align: middle;
+      display: inline-block;
+      line-height: 28px;
+      margin: 20px 10px; }
+    .container .tool .tool-op {
+      position: relative;
+      cursor: pointer;
+      padding: 0 10px; }
+      .container .tool .tool-op span {
+        display: inline-block;
+        font-size: 12px;
+        line-height: 28px;
+        height: 28px;
+        margin-right: 5px;
+        vertical-align: middle; }
+      .container .tool .tool-op .iconfont {
+        display: inline-block;
+        font-size: 12px;
+        line-height: 28px;
+        height: 28px;
+        vertical-align: middle;
+        position: absolute;
+        right: 0;
+        top: 2px; }
+      .container .tool .tool-op .up {
+        display: none; }
+      .container .tool .tool-op .tool-select {
+        position: absolute;
+        width: 74px;
+        left: 0;
+        background: #eaeceb;
+        z-index: 9;
+        display: none; }
+        .container .tool .tool-op .tool-select a {
+          display: block;
+          padding: 0 0 0 10px;
+          border-top: 1px solid #ddd;
+          font-size: 12px; }
+
+.main {
+  height: 42px;
+  width: 100%;
+  margin: 40px auto 50px; }
+  .main .top {
+    font-size: 14px;
+    width: 150px;
+    height: 42px;
+    float: left; }
+    .main .top .cat {
+      float: left; }
+      .main .top .cat .icon-gouwuche {
+        float: left; }
+      .main .top .cat div {
+        width: 100px;
+        height: 40px;
+        float: left; }
+        .main .top .cat div h2 {
+          font-size: 18px;
+          margin-top: 3px; }
+        .main .top .cat div p {
+          font-size: 12px; }
+  .main .shopping-step {
+    float: right;
+    width: 440px;
+    font-size: 14px;
+    display: block;
+    border-top: 2px solid #b0b0b0; }
+    .main .shopping-step li {
+      width: 33.3%;
+      float: left;
+      position: relative;
+      padding-top: 8px;
+      font-size: 16px; }
+    .main .shopping-step .step-left {
+      text-align: left; }
+      .main .shopping-step .step-left span {
+        display: block;
+        width: 12px;
+        height: 12px;
+        background: #ccc;
+        border-radius: 50%;
+        position: absolute;
+        top: -6px;
+        left: -6px; }
+    .main .shopping-step .step-center {
+      text-align: center; }
+      .main .shopping-step .step-center span {
+        display: block;
+        width: 12px;
+        height: 12px;
+        background: #ccc;
+        border-radius: 50%;
+        position: absolute;
+        top: -6px;
+        left: 60px; }
+    .main .shopping-step .step-right {
+      text-align: right; }
+      .main .shopping-step .step-right span {
+        display: block;
+        width: 12px;
+        height: 12px;
+        background: #ccc;
+        border-radius: 50%;
+        position: absolute;
+        top: -6px;
+        right: -6px; }
+
+.hint-min {
+  margin-bottom: 10px;
+  position: relative;
+  padding: 0 5px;
+  background: #f0f0f0;
+  color: #818181;
+  font-size: 14px;
+  padding: 4px 0; }
+  .hint-min a {
+    color: #0883de; }
+  .hint-min .xx {
+    display: block;
+    position: absolute;
+    right: 5px;
+    top: 1px;
+    color: #222; }
+
+.goods {
+  text-align: center; }
+  .goods i {
+    display: block;
+    margin-top: 50px; }
+  .goods p {
+    margin-top: 50px;
+    font-size: 18px;
+    color: #4d4d4d;
+    font-weight: 300; }
+  .goods a {
+    margin-top: 18px;
+    display: inline-block;
+    width: 130px;
+    height: 34px;
+    line-height: 34px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #000;
+    border: 1px solid #000;
+    box-sizing: border-box; }
+
+.pay-wapper .titlr {
+  padding: 0 30px;
+  background: #444;
+  overflow: hidden;
+  position: relative; }
+  .pay-wapper .titlr p {
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+    text-align: center;
+    position: relative; }
+    .pay-wapper .titlr p span {
+      display: block;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background: #fff;
+      position: absolute;
+      cursor: pointer;
+      top: 18px;
+      left: -20px; }
+  .pay-wapper .titlr .left {
+    text-align: left; }
+  .pay-wapper .titlr .right {
+    text-align: right; }
+
+.table {
+  margin-top: 10px;
+  min-height: 88px;
+  display: block;
+  padding: 20px;
+  border: 1px solid #ccc; }
+  .table .t-left {
+    width: 368px;
+    float: left;
+    position: relative; }
+    .table .t-left img {
+      float: left;
+      display: block;
+      width: 66px;
+      float: left; }
+    .table .t-left span {
+      display: block;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background: #ccc;
+      position: absolute;
+      cursor: pointer;
+      top: 36px;
+      left: -14px; }
+    .table .t-left p {
+      float: left;
+      text-align: left;
+      width: 270px;
+      min-height: 44px;
+      padding-left: 3px;
+      overflow: hidden;
+      line-height: 44px;
+      font-size: 14px;
+      color: #444; }
+      .table .t-left p em {
+        color: #9a9a9a;
+        width: 188px;
+        height: 26px;
+        line-height: 26px; }
+  .table .t-cneter {
+    width: 148px;
+    float: left;
+    margin: 0 30px;
+    text-align: center;
+    margin-top: 30px; }
+    .table .t-cneter p {
+      width: 148px; }
+  .table .t-piece {
+    display: block;
+    width: 128px;
+    float: left;
+    margin-top: 30px;
+    font-size: 14px; }
+    .table .t-piece .add {
+      float: left;
+      display: block;
+      width: 20px;
+      height: 30px;
+      border: 1px solid #ccc;
+      line-height: 30px;
+      text-align: center;
+      cursor: pointer; }
+    .table .t-piece .txt {
+      float: left;
+      width: 30px;
+      height: 30px;
+      border: 1px solid #ccc;
+      text-align: center; }
+    .table .t-piece .minus {
+      float: left;
+      display: block;
+      width: 20px;
+      height: 30px;
+      border: 1px solid #ccc;
+      line-height: 30px;
+      text-align: center;
+      cursor: pointer; }
+  .table .t-maney {
+    width: 148px;
+    float: left;
+    text-align: center;
+    margin-top: 30px; }
+    .table .t-maney p {
+      width: 148px;
+      color: red; }
+  .table .t-right {
+    float: right;
+    margin-top: 30px; }
+    .table .t-right span {
+      display: block;
+      font-size: 12px;
+      color: #000;
+      cursor: pointer; }
+
+.bottom {
+  height: 50px;
+  background: #ccc; }
+  .bottom .bott {
+    float: left;
+    width: 990px;
+    position: relative;
+    padding-left: 50px;
+    box-sizing: border-box; }
+    .bottom .bott .bt-left {
+      float: left;
+      position: relative;
+      margin-right: 60px;
+      line-height: 50px; }
+      .bottom .bott .bt-left .all {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: #fff;
+        position: absolute;
+        cursor: pointer;
+        top: 18px;
+        left: -22px; }
+      .bottom .bott .bt-left span {
+        font-size: 16px;
+        color: #000; }
+      .bottom .bott .bt-left a {
+        color: #017cf8;
+        margin-left: 20px;
+        font-size: 14px; }
+    .bottom .bott .bt-center {
+      float: left;
+      height: 50px;
+      line-height: 50px;
+      font-size: 14px; }
+      .bottom .bott .bt-center p {
+        float: left;
+        width: 84px; }
+        .bottom .bott .bt-center p strong {
+          display: inline-block;
+          color: red; }
+    .bottom .bott .bt-right {
+      float: left;
+      width: 180px;
+      height: 50px; }
+      .bottom .bott .bt-right p {
+        color: #afafaf;
+        font-size: 16px; }
+      .bottom .bott .bt-right .sum {
+        color: #000; }
+    .bottom .bott .bt-maney {
+      float: left;
+      width: 80px;
+      color: red; }
+    .bottom .bott .bt-lright {
+      display: block;
+      width: 150px;
+      height: 50px;
+      line-height: 50px;
+      background: red;
+      color: #fff;
+      float: right;
+      line-height: 50px;
+      text-align: center; }
+
+.botom-tab {
+  height: 40px;
+  line-height: 40px;
+  margin-top: 20px;
+  border-bottom: 1px solid #dcdcdc; }
+  .botom-tab .botom-title {
+    width: 80px;
+    text-align: center;
+    margin: 0 13px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #444; }
+  .botom-tab .cur {
+    border-bottom: 3px solid #000; }
+
+.bottom-img {
+  position: relative;
+  width: 100%;
+  font-size: 12px;
+  overflow: hidden; }
+  .bottom-img .bottom-list {
+    width: 990px;
+    min-height: 500px;
+    margin: 20px 0 10px;
+    overflow-x: auto;
+    overflow-y: hidden; }
+    .bottom-img .bottom-list .item {
+      float: left;
+      margin-right: 8px;
+      width: 190px;
+      height: 342px; }
+      .bottom-img .bottom-list .item img {
+        display: block;
+        width: 190px;
+        height: 251px; }
+      .bottom-img .bottom-list .item .name {
+        display: block;
+        font-size: 12px;
+        font-weight: 300;
+        color: #222;
+        text-align: center;
+        height: 12px;
+        line-height: 12px;
+        margin: 15px 0 10px;
+        padding-left: 2px;
+        padding-right: 2px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap; }
+      .bottom-img .bottom-list .item .ney {
+        color: #000;
+        font-weight: 400;
+        text-align: center;
+        margin-bottom: 8px; }
+      .bottom-img .bottom-list .item .bt-car {
+        display: block;
+        margin: 0 auto;
+        color: #3a3a3a;
+        font-size: 14px;
+        font-weight: 300;
+        width: 110px;
+        height: 28px;
+        line-height: 28px;
+        text-align: center;
+        border: 1px solid #b0b0b0;
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        background-color: #fff;
+        padding: 0;
+        cursor: pointer;
+        outline: none; }
